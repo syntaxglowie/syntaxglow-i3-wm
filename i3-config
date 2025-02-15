@@ -1,0 +1,24 @@
+# class                 border  bground text    indicator child_border
+client.focused          #B5FFE1 #0D1F22 #B5FFE1 #1A936F   #285577
+client.focused_inactive #1A936F #0D1F22 #1A936F #484E50   #5F676A
+client.unfocused        #0D1F22 #0D1F22 #888888 #292D2E   #222222
+client.urgent           #FFEAEE #EF476F #FFFFFF #900000   #900000
+client.placeholder      #000000 #0C0C0C #FFFFFF #000000   #0C0C0C
+
+client.background       #FFFFFF
+
+bar {
+  colors {
+    background #0D1F22
+    statusline #D1E9E2
+    separator  #1A936F
+
+    focused_workspace  #0D1F22 #B5FFE1 #1A936F
+    active_workspace   #0D1F22 #1A936F #B5FFE1
+    inactive_workspace #0D1F22 #0D1F22 #888888
+    urgent_workspace   #0D1F22 #EF476F #FFEAEE
+    binding_mode       #0D1F22 #EF476F #FFEAEE
+  }
+}
+
+bindsym $mod+d exec "dmenu_run -nf '#D1E9E2' -nb '#0D1F22' -sb '#1A936F' -sf '#B5FFE1' -fn 'monospace-10' -p 'dmenu prompt &gt;'"
